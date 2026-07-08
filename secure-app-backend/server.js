@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken');
 const db = require('./db'); 
 
 // Only ONE of each middleware import here:
-const authMiddleware = require('./middleware/auth');
+const authMiddleware = require('./middleware/Auth');
 const adminMiddleware = require('./middleware/admin');
 
 const app = express();
