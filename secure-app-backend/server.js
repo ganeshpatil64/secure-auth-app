@@ -26,7 +26,7 @@ const loginLimiter = rateLimit({
 
 // --- SECURITY MIDDLEWARE ---
 app.use(helmet());
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({ origin: 'http://localhost:5173', 'https://your-frontend-project.vercel.app' }));
 app.use(express.json({ limit: '10kb' }));
 
 const apiLimiter = rateLimit({
